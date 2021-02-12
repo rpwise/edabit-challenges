@@ -11,3 +11,9 @@ test('cube of 1 to equal 1', () => {
   test('cube of 5 to equal 125', () => {
     expect(cube(5)).toBe(125);
   });
+
+  test('cube of null', () => {
+    expect(() => { 
+        cube(null);
+    }).toThrow("Parameter is null");
+  });
